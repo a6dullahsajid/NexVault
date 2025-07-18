@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer components {
+  .mycontainer {
+    @apply container px-25 py-16 mx-auto;
+  }
+}
+
+nav {
+  background: linear-gradient(90deg, rgb(18, 121, 142) 0%, rgb(55, 55, 132) 56%, rgb(59, 11, 121) 100%);
+  /* background-color: rgb(23, 27, 50); */
+}
+.logo img{
+  width: 35px;
+}
+
+.manager img{
+  width: 45px;
+}
+.manager span img,.manager td img{
+  width: 17px;
+}
+
+@media (max-width: 480px) {
+  .logo img{
+    width: 30px;
+  }
+  .manager img{
+    width: 35px;
+  }
+  button lord-icon{
+    width: 18px;
+  }
+  td lord-icon{
+    width: 12px;
+  }
+  .manager span img,.manager td img{
+    width: 12px;
+  }
+  /* styles for very small phones */
+}
+
